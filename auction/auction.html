@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Battle Of Bytes</title>
+    <link rel="stylesheet" href="auction.css" />
+  </head>
+  <body>
+
+    <h1>
+      <img src="/Battle of bytes landing page/Batlle of bytes/images/leafNow-img.png" alt="Battle Of Bytes Logo" class="logo">
+      Battle Of Bytes
+    </h1>
+    <!--Timer-->
+    <div class="timer-container" style="display:none">
+      <p>Time Remaining: <span id="timer">4320</span> seconds</p>
+    </div>
+
+    <!--Players List-->
+    <ul id="playersList" class="players-list"></ul>
+
+    <!-- Teams Section-->
+    <div class="teams-container">
+      <div class="team-widget" id="team1">
+        <img src="/Battle of bytes landing page/auction/images/RubyRoyals.jpg" alt="Team 1 Logo" class="team-logo">
+        <h2></h2>
+        <p>Budget: <span id="budget-team1"></span></p>
+        <button class="bid-now-button" disabled>Bid Now</button>
+
+        <ul id="players-team1" class="purchased-list">
+          <li><strong>Purchased Players:</strong></li>
+        </ul>
+      </div>
+      <div class="team-widget" id="team2">
+        <img src="/Battle of bytes landing page/auction/images/PythonPacers.png" alt="Team 2 Logo" class="team-logo">
+        <h2></h2>
+        <p>Budget: <span id="budget-team2"></span></p>
+        <button class="bid-now-button" disabled>Bid Now</button>
+
+        <ul id="players-team2" class="purchased-list">
+          <li><strong>Purchased Players:</strong></li>
+        </ul>
+      </div>
+
+      <div class="team-widget" id="team3">
+        <img src="/Battle of bytes landing page/auction/images/TechTroopers.jpeg" alt="Team 3 Logo" class="team-logo">
+        <h2></h2>
+        <p>Budget: <span id="budget-team3"></span></p>
+        <button class="bid-now-button" disabled>Bid Now</button>
+
+        <ul id="players-team3" class="purchased-list">
+          <li><strong>Purchased Players:</strong></li>
+        </ul>
+      </div>
+      <div class="team-widget" id="team4">
+        <img src="/Battle of bytes landing page/auction/images/LogicLegends.png" alt="Team 4 Logo" class="team-logo">
+        <h2></h2>
+        <p>Budget: <span id="budget-team4"></span></p>
+        <button class="bid-now-button" disabled>Bid Now</button>
+
+        <ul id="players-team4" class="purchased-list">
+          <li><strong>Purchased Players:</strong></li>
+        </ul>
+      </div><br>
+
+      <div class="team-widget" id="team5">
+        <img src="/Battle of bytes landing page/auction/images/CodeNinjas.jpg" alt="Team 5 Logo" class="team-logo">
+        <h2></h2>
+        <p>Budget: <span id="budget-team5"></span></p>
+        <button class="bid-now-button" disabled>Bid Now</button>
+
+        <ul id="players-team5" class="purchased-list">
+          <li><strong>Purchased Players:</strong></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--SOLD button-->
+    <div class="sold-container" style="display:none">
+      <button id="soldButton" class="sold-button" onclick="sellPlayer()">
+        SOLD
+      </button>
+    </div>
+
+    <script src="auction.js"></script>
+  </body>
+</html>
